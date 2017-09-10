@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 万能的删除
+		var arr=[23,56,14,19,30];                       
+        console.log(spliceCancel(arr,2,2));
+
+        function spliceCancel(arr,pos,num){
+        	var newarr=[];
+        	for(var i=0;i<arr.length;i++){
+        		if(i>=pos && i<pos+num){
+        			continue;
+        		}
+        		newarr[newarr.length]=arr[i];
+        	}        	
+        	return newarr;
+        }
+
+	</script>
+</body>
+</html>
