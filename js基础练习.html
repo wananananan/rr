@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		  // /十行十列/ 
+       for(var j=1;j<=10;j++){
+       	for(var i=1;i<=10;i++){
+        	document.write('*')
+        }
+          document.write('<br/>')
+        }
+        
+       
+          /*乘法表 行变色*/
+        document.write('<table border=1 cellspacing=0 >');
+        for(var i=1;i<=9;i++){
+           if(i%2==1){
+           	document.write('<tr style="background:red;">');
+           }else{
+           	  document.write('<tr style="background:yellow;">');
+           }
+         for(var j=1;j<=i;j++){
+           
+             document.write('<td>' +  i +'*'+ j + '</td>');
+                     
+        }
+           document.write('</tr>');
+        }           
+        document.write('</table>')
+        
+         /*乘法表 列变色*/
+
+          document.write('<table border=1 cellspacing=0 >');
+        for(var i=1;i<=9;i++){          
+           	  document.write('<tr>');
+         for(var j=1;j<=i;j++){
+            if(j%2==0){
+            	document.write('<td style="background:green;">' +  i +'*'+ j + '</td>');     
+            	}else{
+                document.write('<td style="background:yellow;">' +  i +'*'+ j + '</td>');
+            	}                            
+         }
+           document.write('</tr>');
+        }           
+        document.write('</table>')                
+        var table='<table>';
+        for(var i=1;i<=9;i++){
+        	// i='<tr>'
+        	table=table+'<tr>';
+        	for(var j=1;j<=i;j++){
+        		// j='<td>'
+        		table=table+'<td>' + i+'*'+j + '</td>';
+        	}
+        	table=table+'</tr>';
+        }
+        document.write(table);
+
+        /* *金字塔 */
+        var row=5;
+        for(var i=1;i<=row;i++){
+           for(var j=1;j<=row-i;j++){
+           document.write('&nbsp');
+           }
+        
+        for(var y=1;y<=2*i-1;y++){
+        	document.write('*');
+        }
+        document.write('</br>'); 
+    }
+         
+	</script>
+</body>
+</html>
