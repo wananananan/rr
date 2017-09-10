@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 拷贝
+		 var arr=[1,2,3,4,['z','w']];       
+         arr[2]='a';
+         console.log(arr);
+
+         function copy(arr){
+         var newarr=[];
+       	 for(i=0;i<arr.length;i++){
+       	   if(typeof arr[i]=='object'){
+       	   	 newarr[i]=copy(arr[i])
+       	   }else{
+       	   	  newarr[i]=arr[i]
+       	   }
+       	 }
+            return newarr;
+         }
+         
+	</script>
+</body>
+</html>
