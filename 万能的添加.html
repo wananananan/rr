@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// 万能的添加
+		var arr=[1,2,3,4,5];
+        console.log(spliceadd(arr,1,'a','b','c'));
+        function spliceadd(arr,pos,...rest){
+           var newarr=[];
+           for( var i=0;i<pos;i++){
+           	newarr[newarr.length]=arr[i];
+           }
+           for( var i=0;i<rest.length;i++){  
+           	newarr[newarr.length]=rest[i];
+           }
+           for( var i=pos;i<arr.length;i++){
+           	newarr[newarr.length]=arr[i];
+           }
+           return newarr;
+       }
+	</script>
+</body>
+</html>
