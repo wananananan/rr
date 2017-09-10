@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	 <script>
+	 	 // filter函数
+        var arr=[23,56,14,19,30];
+        var fj=filter(arr);
+        console.log(fj);
+        function filter(arr){
+        	var newarr=[];
+            for(i=0;i<arr.length;i++){
+            	if(arr[i]%2==0){
+                    newarr[newarr.length]=arr[i]
+            	}
+            }
+            return newarr;
+        }
+	 </script>
+</body>
+</html>
