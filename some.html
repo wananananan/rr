@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// some
+		var arr=[1,2,3,4,5];
+        var boy=some(arr,function(value){
+       	   return value>0;
+        })
+        console.log(boy);
+
+        function some(arr,fn){
+       	for(var i=0;i<arr.length;i++){
+       		if(fn(arr[i])){
+       			return true;
+       		}
+       		return false;
+       	 }
+        }
+
+	</script>
+</body>
+</html>
