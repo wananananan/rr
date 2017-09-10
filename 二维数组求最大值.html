@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	 //二维数组求最大值 
+	   var x=[99,2,3,4,5];
+       var y=[7,8,9,10];
+       fn(x,y);
+
+      function fn(rr,jr){
+       var c=[rr,jr];
+       var max=c[0][0];
+       for(var i=0;i<c.length;i++){
+       	  for(var j=0;j<c[i].length;j++){
+       	  	if(max<c[i][j]){
+       	  		max=c[i][j];
+       	  	}
+       	  }
+       }
+       console.log(max);
+       }
+	</script>
+</body>
+</html>
