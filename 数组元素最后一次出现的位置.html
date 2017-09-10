@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	    // 最后一次出现的位置
+	    var arr=[1,3,5,7,8,7];
+        console.log(lastindexof(arr,7));
+        
+        function lastindexof(arr,value){
+        	for(i=arr.length-1;i>=0;i--){
+        		if(arr[i] == value){
+        			return i;
+        		}        		
+        	}
+        }
+	</script>
+</body>
+</html>
