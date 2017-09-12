@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <script>
+        // 遍历对象
+    	function ipone(brand,size,color,price){
+            this.brand=brand;
+            this.size=size;
+            this.color=color;
+            this.price=price;            
+            this.say=function(){
+            	alert('g' );
+            }
+		}
+		let lixing = new ipone('lixing','wuif1707','nan');
+		let fenjia = new ipone('fenjia','wuif1708','nv');
+	for(let i in lixing){
+        	console.log(`${i}---${lixing[i]}`);
+        }
+    </script>
+</body>
+</html>
