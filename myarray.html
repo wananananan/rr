@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let arr = new myarray('a','b','c','d' ,5);
+	   	 console.log(arr);
+          // indexof
+	   	    let w = arr.indexOf('a');
+           console.log(w);
+           // lastindexof
+          let q = arr.lastIndexOf('b');
+            console.log(q);
+            // some
+          let s = arr.some(function(value){
+                return value>0;
+          });
+            console.log(s);
+            // push
+          arr.push(1,2,3);
+             console.log(arr);
+          // reverse
+          console.log(arr.reversal(arr));
+          // join
+          let t =arr.join('+');
+          console.log(t);
+          // map
+           arr.map(function(value){
+           	value*2;
+           })
+          console.log() ;
+           // includes
+           
+           console.log(arr.includes(5));
+     
+
+	   	 function myarray( ){
+	   	 	for(let i=0;i<arguments.length;i++){	   			
+	   	 		this[i]=arguments[i];
+	   	 	}
+	   	 	    this.length=arguments.length;
+          /*indexof*/
+	   	        this.indexOf=function(value){
+         	  for(let i=0;i<arguments.length;i++){
+         		if(this[i]==value){
+         			return i;
+         		}
+         	}
+         	return -1;
+         }
+         /*lastindexof*/
+              this.lastIndexOf = function(value){
+            for(let i=this.length-1;i>=0;i--){
+        		if(this[i] == value){
+         			return i;
+         		}      		
+         	}
+          }
+          /*some*/
+            this.some=function(fn){
+            for(let i=0;i<this.length;i++){
+       		    if(fn(this[i])){
+       			return true;
+       		}      		
+       	}
+       	return false;
+       }
+    /*push*/
+         this.push=function(){
+           	for(let i=0;i<arguments.length;i++){
+        		this[this.length]=arguments[i];
+        		this.length++;
+        	}
+           }
+      /*reverse*/
+         this.reversal=function(){
+         	 let newarr=[];
+            for(let i=this.length-1;i>-1;i--){
+             newarr[newarr.length]=this[i];
+            }
+            return newarr;
+        }
+        // join
+         this.join=function(str){
+         	let result=' ';
+            for(let i=0;i<this.length;i++){
+                if(i<this.length-1){
+                   result +=this[i]+str;
+                }else{
+                	result+=this[i];
+                }
+            }           
+           return result;
+        }
+          this.map=function(fn){
+          	let newarr=new myarray;
+          	for(let i=0;i<this.length;i++){
+          		newarr.push(fn(this[i],i,this))
+          	}
+              return newarr;
+          }
+          // includes
+         this.includes=function(value){
+         	for(let i=0;i<this.length;i++){
+         		if(value=this[i]){
+         			return true;
+         		}
+         	}
+         	return false;
+         }
+      }
+	</script>
+</body>
+</html>
