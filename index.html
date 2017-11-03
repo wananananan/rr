@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RR美食城</title>
+
+  
+<meta charset="utf-8">
+
+<!-- <link rel="stylesheet" href="default.css"> -->
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery库/jquery-3.2.1.js"></script>
+
+</head>
+<style>
+    .return{
+        z-index: 999;
+        font-size:20px;
+        color: sienna;
+        position: absolute;
+        top:0px;
+        right:0px;
+        text-decoration:none;
+    }
+</style>
+<body>
+  <a href="../index.html" class="return">Return</a>
+<header>
+    <div class="header-nav">
+        <div role="navigation">
+            <a href="#" rel="home" class="hd-logo" title="美食餐厅"><img src="images/logo.png"></a>
+            <ul class="hd-nav">
+                <li class="search-box-li">
+                    <div><input type="text" name="search-keyword" placeholder="输入关键词" form="search-keyword"></div>
+                    </li>
+                <li><a href="index.html" name="index">网站首页<span></span></a></li>
+                <li><a href="about.html" name="about">关于我们<span></span></a></li>
+                <li><a href="productlist.html" name="productlist">菜式欣赏<span></span></a></li>
+                <li><a href="article.html" name="article">美食资讯<span></span></a></li>
+                <li><a href="contact.html" name="contact">在线预订<span></span></a></li>
+            </ul>
+
+            <div class="motai"></div>
+            <ul>
+                <li><a></a></li>
+                <li><a>中文</a></li>
+                <li><a>En</a></li>
+                <li><a></a></li>
+            </ul>
+
+        </div>
+        <div class="search-box">
+            <form method="post" action="#" id="search-keyword">
+                <!-- <input type="text" name="search-keyword" placeholder="请输入您的内容"> -->
+                <span>
+                    </span>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="header-carousel container">
+
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播（Carousel）指标 -->
+            <ol class="carousel-indicators">
+
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- 轮播（Carousel）项目 -->
+            <ul class="carousel-inner">
+                <li class="item active">
+                    <img src="images/banner.jpg" style="width:100%;" alt="First slide">
+                </li>
+                <li class="item">
+                    <img src="images/banner2.jpg" style="width:100%;" alt="Second slide">
+                </li>
+                <li class="item">
+                    <img src="images/banner3.jpg" style="width:100%;" alt="Third slide">
+                </li>
+            </ul>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev"></a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next"></a>
+        </div>
+
+    </div>
+</header>
+<main class="main-first-bgcolor">
+    <div>
+        <div class="main-head">
+            <p>
+                <span>我们提供</span>
+            </p>
+        </div>
+        <div class="main-we-provide">
+            <ul>
+                <li><span><img src="images/lunch.png" alt=""></span>
+                    <h2>中餐</h2>
+                    <p>虾笼包  ，灌汤包  油条豆浆等</p></li>
+                <li><span><img src="images/dinner.png" alt=""></span>
+                    <h2>晚餐</h2>
+                    <p>虾笼包  ，灌汤包  油条豆浆等。</p></li>
+                <li><span><img src="images/coffee.png" alt=""></span>
+                    <h2>甜品/咖啡</h2>
+                    <p>虾笼包  ，灌汤包  油条豆浆等</p></li>
+            </ul>
+        </div>
+    </div>
+<!-- 菜式欣赏 -->
+    <div>
+        <div class="main-head">
+            <p>
+                <span>菜式欣赏</span>
+            </p>
+        </div>
+    </div>
+</main>
+
+<main>
+    <img class="mdbanner" src="images/mdbanner.jpg">
+</main>
+<main>
+    <div class="main-body">
+       <!--  <p style="height: 193px"><span>每一种食物来源都经过我们的精挑细选，关于食材我们只选最天然、健康、优质的，只为一份对极致美味的追求，用心做好每一份菜，是我们不变的宗旨。</span></p> -->
+        <ul class="main-body-img">
+            <li><img src="images/mdlist1.jpg"></li>
+            <li><img src="images/mdlist2.jpg"></li>
+            <li><img src="images/mdlist3.jpg"></li>
+            <li><img src="images/mdlist4.jpg"></li>
+            <li><img src="images/mdlist5.jpg"></li>
+            <li><img src="images/mdlist6.jpg"></li>
+        <!--     <li><img src="images/mdlist7.jpg"></li>
+            <li><img src="images/mdlist8.jpg"></li>
+            <li><img src="images/mdlist9.jpg"></li> -->
+        </ul>
+    </div>
+</main>
+<!-- ///////////////////// -->
+<main>
+    <ul class="main-submenu">
+        <li><a href="#">午餐</a></li>
+        <li><a href="#">晚餐</a></li>
+        <li><a href="#">甜品</a></li>
+        <li><a href="#">饮料</a></li>
+    </ul>
+    <ul class="main-submenu-info main-submenu-first">
+        <li><a href="#">
+            <div class="food-name">
+                <p>玫瑰香酥西兰花</p>
+                <p>Rose fried broccoli</p>
+            </div>
+            <div class="food-price">
+                <p>￥<span>25</span></p>
+            </div>
+            <div class="img-bg"></div>
+            <img src="images/foodlist1.jpg"></a></li>
+        <li><a href="#">
+            <div class="food-name">
+                <p>玫瑰香酥西兰花</p>
+                <p>Rose fried broccoli</p>
+            </div>
+            <div class="food-price">
+                <p>￥<span>25</span></p>
+            </div>
+            <div class="img-bg"></div>
+            <img src="images/foodlist2.jpg"></a></li>
+        <li><a href="#"><img src="images/foodlist3.jpg"></a></li>
+        <li><a href="#"><img src="images/foodlist4.jpg"></a></li>
+        <li><a href="#"><img src="images/foodlist5.jpg"></a></li>
+        <li><a href="#"><img src="images/foodlist6.jpg"></a></li>
+    </ul>
+    <a class="more" href="#">MORE</a>
+</main>
+<main>
+    <div>
+        <div class="main-head">
+            <p><span>美食资讯</span></p>
+        </div>
+    </div>
+    <ul class="main-submenu main-submenu-second">
+        <li><a href="#">最新新闻</a></li>
+        <li><a href="#">餐厅新闻</a></li>
+        <li><a href="#">美食热闻</a></li>
+        <li><a href="#">甜品站</a></li>
+    </ul>
+    <ul class="main-submenu-info ">
+        <li><a href="#">
+            <div class="activity-duration">
+                <img  src="images/activity-duration.png">
+                <p>6-1日</p>
+            </div>
+            <img src="images/foodnewlist1.jpg">
+            <h1 class="food-head">周末轻松制作美味甜品</h1>
+            <p class="food-info">每个周末都抽出一个小时的时间来为自己做一份甜品，让周末的休闲充满制作甜蜜和品尝甜蜜的快乐。</p>
+        </a></li>
+        <li><a href="#">
+            <div class="activity-duration">
+                <img src="images/activity-duration.png">
+                <p>6-1日</p>
+            </div>
+            <img  src="images/foodnewlist1.jpg">
+            <h1 class="food-head">周末轻松制作美味甜品</h1>
+            <p class="food-info">每个周末都抽出一个小时的时间来为自己做一份甜品，让周末的休闲充满制作甜蜜和品尝甜蜜的快乐。</p>
+        </a></li>
+        <li><a href="#">
+            <div class="activity-duration">
+                <img src="images/activity-duration.png">
+                <p>6-1日</p>
+            </div>
+            <img src="images/foodnewlist1.jpg">
+            <h1 class="food-head">周末轻松制作美味甜品</h1>
+            <p class="food-info">每个周末都抽出一个小时的时间来为自己做一份甜品，让周末的休闲充满制作甜蜜和品尝甜蜜的快乐。</p>
+        </a></li>
+
+    </ul>
+    <a class="more" href="#">MORE</a>
+</main>
+<main>
+
+        <div class="main-head">
+            <p><span>在线预定</span></p>
+        </div>
+        <div class="main-reserve">
+            <form action="#" method="post" id="food-reserve">
+                <ul>
+                    <li>
+                        <label for="username">姓名</label>
+                        <input type="text" name="username" id="username">
+                    </li>
+                    <li>
+                        <label for="phonenumber">电话号码</label>
+                        <input type="text" name="phonenumber" id="phonenumber">
+                    </li>
+                    <li>
+                        <label for="email">电子邮件</label>
+                        <input type="text" name="email" id="email">
+                    </li>
+                    <li>
+                        <label for="time">时间</label>
+                        <input type="text" name="time" id="time">
+                    </li>
+                    <li>
+                        <label for="numberofpeople">人数</label>
+                        <input type="text" name="numberofpeople" id="numberofpeople">
+                    </li>
+                    <li>
+                        <label for="date">日期</label>
+                        <input type="text" name="date" id="date">
+                    </li>
+                    <li>
+                        <label for="guestbook">留言</label>
+                        <input type="text" name="guestbook" id="guestbook">
+                    </li>
+                </ul>
+                <a class="reserve">预定</a>
+
+            </form>
+        </div>
+</main>
+
+<footer>
+    <div>
+        <ul class="footer-top">
+            <li><a href="index.html">网站首页</a></li>
+            <li><a href="about.html">关于我们</a></li>
+            <li><a href="productlist.html">菜式欣赏</a></li>
+            <li><a href="article.html">美食资讯</a></li>
+            <li><a href="contact.html">在线预订</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="footer-body">
+            <li>
+                <span>电话:</span><span>0714-8868331</span>
+            </li>
+            <li>
+                <span>邮箱:</span><span>123@dayeyunalading.com</span>
+            </li>
+            <li>
+                <span>地址:</span><span>山西省太原市凯通大厦507-办公室</span>
+            </li>
+        </ul>
+        
+    </div>
+</footer>
+
+</body>
+<script>
+  //鼠标移入banner图
+    let lis=$('.carousel-inner>li');
+    let lisw=lis.width();
+    let now=next=0;
+    let t=setInterval(fn, 1000);
+    function fn(){
+        next++
+        if(next==lis.length){
+            next=0;
+        }
+        lis.eq(next).css('left',lisw);
+        lis.eq(now).animate({left:-lisw});
+        lis.eq(next).animate({left:0});
+        now=next;
+    }
+    let bannerb=$('.carousel-inner');
+    bannerb.on('mouseenter',function(){
+        clearInterval(t);
+    })
+    bannerb.on('mouseleave',function(){
+        t=setInterval(fn, 1000);
+    })
+</script>
+</html>
