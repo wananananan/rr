@@ -1,0 +1,35 @@
+
+.select-box{
+    width: 500px;
+    height: auto;
+    margin:0 auto;
+}
+.select-input{
+    width: 100%;
+    height: 50px;
+    padding-left: 15px;
+    border: 1px solid #0FA7F7;
+    border-radius: 10px;
+}
+.select-input input{
+    border: none;
+    outline: none;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.select-list{
+    width: 475px;
+    height: auto;
+    margin: 0 auto;
+    list-style: none;
+    border: 1px solid #0FA7F7;
+    border-radius: 10px;
+}
+.select-list li{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
